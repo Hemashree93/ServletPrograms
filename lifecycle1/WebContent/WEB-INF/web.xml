@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>lifecycle1</display-name>
+  <welcome-file-list>
+    <welcome-file>life.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>Life</servlet-name>
+  <servlet-class>org.hema.hemaa.LifeCycle</servlet-class>
+  <init-param>
+  <param-name>name</param-name>
+  <param-value>BeginningOfLifeCycle</param-value>
+  </init-param>
+  <init-param>
+   <param-name>age</param-name>
+  <param-value>56</param-value>
+  </init-param>
+  
+   </servlet>
+   
+  <servlet-mapping>
+  <servlet-name>Life</servlet-name>
+  <url-pattern>/lifecycle1</url-pattern>
+  
+  </servlet-mapping>
+  
+
+  </web-app>
